@@ -1,0 +1,91 @@
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+body {
+    line-height: 1.6;
+}
+
+.wrap {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 1em;
+}
+
+.news li {
+    float: left;
+    width: 29.33333%;
+    margin: 2%;
+}
+
+@media(max-width:768px) {
+    .news li {
+        width: 46%;/*50%記得扣除768px以上的左右margin共4%*/
+    }
+}
+
+@media(max-width:569px) {
+    .news li {
+        width: 96%;/*100%記得扣除768px以上的左右margin共4%*/
+    }
+}
+
+
+
+
+.box{
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 15px;
+    text-align: center;
+    transition: all .5s ease-out;
+    /* height: 500px; */
+    /* background-color: lightblue; */
+}
+.box:hover{
+    background: white;
+    box-shadow: 0px 20px 20px rgba(0,0,0,.25);
+}
+
+.line{
+    width: 40px;
+    height: 6px;
+    border-radius: 3px;
+    margin: 10px auto;
+    transition: all 1s ease;
+}
+
+.box:hover .line{
+    width:120px;
+}
+
+
+
+.gbox{
+    height: 250px;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
