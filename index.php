@@ -45,7 +45,7 @@
             <a class="nav-link" href="#contact">Contact Me || 聯絡我</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./front/login.html">Login || 登入</a>
+            <a class="nav-link" href="./front/login.php">Login || 登入</a>
           </li>
         </ul>
       </div>
@@ -370,16 +370,14 @@
   <!-- Contact Container END-->
 
   <!-- footer -->
-<!-- <?php include_once "footer.php"?> -->
-  <!-- footer -->
   <footer class="text-center text-white fixed-bottom " style="background-color: #F26659;">
     <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.2);">
       © 2022
       <a class="text-white">resume</a>
     </div>
   </footer>
-  <!-- footer2 end -->
-  <!-- footer2 end -->
+  <!-- footer end -->
+  
 
   <script>
     // 使用aos.js
