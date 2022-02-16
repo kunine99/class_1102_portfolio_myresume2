@@ -1,15 +1,16 @@
 <?php
+date_default_timezone_set("Asia/Taipei");
+session_start();
 //填資料庫名稱
-$dsn = "mysql:host=localhost;charset=utf8;dbname=myresume_11";
-// $pdo = new PDO($dsn, 'root', '');
+$dsn = "mysql:host=localhost;charset=utf8;dbname=resume_11";
+$pdo = new PDO($dsn, 'root', '');
 
 // $dsn = "mysql:host=localhost;charset=utf8;dbname=s1100411"; 
-$pdo = new PDO($dsn, 'root', '');
+// $pdo = new PDO($dsn, 'root', '');
 
 // $dsn = "mysql:host=localhost;charset=utf8;dbname=s1100411";
 // $pdo = new PDO($dsn, 's1100411', 's1100411');
 
-session_start();
 
 //取得符合條件的一筆資料
 function find($table, $id)
@@ -72,28 +73,7 @@ function all($table, ...$arg)
 
     $rows = $pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC);
     return $rows;
-    // return $pdo->exec($sql)告訴我影響了幾筆資料
-
-
-    // implode('`,`')用在欄位
-
-    // update函式設計
-    // 1.指定資料表 $table
-    // 2.指定更新的欄位 ????
-    // 3.指定更新的條件 ????
-
-
-
-    // 把陣列轉成c括的字串
-    // $array=[
-    //     'col1'=>'va11',
-    //     'col2'=>'val2',
-    //     'col3'=>'val3'];
-
-    // echo implode
-    // foreach ($array as $key => $value) {
-    //     $sql="`$key`='$value'";
-    // echo $sql;  如果echo放在迴圈外只會得到最後一次執行的結果
+   
 
 }
 
@@ -120,11 +100,7 @@ function update($table, $column, $where)
     // 投票票數資料進去資料庫
     $pdo->exec($sql);
 
-    // "UPDATE `expenditure` 
-    //     SET `date`='2021-11-22',`place`='泰山訓練場' 
-    //      WHERE `payment_method`='信用卡' AND `classification`='教育'";
-
-    //echo $sql;
+   
 
 }
 
@@ -162,14 +138,7 @@ function del($table, $id)
     return $pdo->exec($sql);
 }
 
-//設定條件變數為where
 
-// function update($table,$colum,$where){
-//     global $pdo;
-//     $sql="UPDATE `$table` SET `col1`='val1',`col2`='val2',`col3`='val3'
-//                         WHERE `col1`='val1' && `col2`='val2',`col3`='val3'}
-
-// -- 有指定陣列形式的就可以用swwitch case撈出來
 
 function to($url)
 {
@@ -190,11 +159,6 @@ function dd($array)
     print_r($array);
     echo "</pre>";
 }
-
-
-
-
-
 
 
 

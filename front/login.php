@@ -73,7 +73,7 @@
     <div class="container h-100">
       <div class="row d-flex justify-content-center align-items-center h-100">
         <div class="col-12 col-md-9 col-lg-7 col-xl-6">
-          <div style="border-radius: 15px;" >
+          <!-- <div style="border-radius: 15px;" > -->
             <div class="card-body p-5">
               <h2 class='text-center font-weight-bold'>會員登入</h2>
               <form action="../api/check_login.php" method="post">
@@ -81,11 +81,11 @@
                 <table id="loginForm" class='table m-auto w-auto'>
                   <tr>
                     <td><i class="fas fa-user">帳號：</td>
-                    <td><input type="text" name="account" placeholder="請輸入帳號" class="form-control form-control-sm"></td>
+                    <td><input type="text" name="acc" placeholder="請輸入帳號" class="form-control form-control-sm"></td>
                   </tr>
                   <tr>
                     <td><i class="fas fa-lock ">密碼：</td>
-                    <td><input type="password" name="password" placeholder="請輸入密碼" class="form-control form-control-sm"></td>
+                    <td><input type="password" name="pw" placeholder="請輸入密碼" class="form-control form-control-sm"></td>
                   </tr>
                   <tr>
                     <td colspan="2">
