@@ -4,10 +4,8 @@
 <h5>Lorem ipsum dolor sit amet.</h5>
 
 <hr><br>
-
-
 <div class="d-flex">
-    <form action="../api/edit_wk.php" method="post">
+    <form action="./api/edit_wk.php" method="post">
         <?php
         $wks = $Work->all();
         foreach ($wks as $wk) {
@@ -41,13 +39,10 @@
         }
         ?>
 </div>
-<br><br>
-
-
 <div class="wkButton">
     <button type="submit" class="btn btn-danger">確定修改</button>
     <button type="reset" class="btn btn-danger">重置</button>
 </div>
 
 </form>
-
+<br><br>
