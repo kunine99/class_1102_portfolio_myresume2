@@ -12,17 +12,35 @@ $Work=new DB("resume_work_experience");
 // $Sk=new DB("resume_skills");
 // $Skt=new DB("resume_sk_text");
 
+$Total=new DB('total');
+$Bottom=new DB('resume_bottom');
+$Title=new DB('resume_title');
+$Ad=new DB('ad');
+$Mvim=new DB('mvim');
+$Image=new DB('image');
+$News=new DB('news');
+$Admin=new DB('admin');
+$Menu=new DB('menu');
 
 
 class DB{
 
 protected $dsn="mysql:host=localhost;charset=utf8;dbname=resume_11";
 protected $pdo="";
-protected $table="";
+// protected $table="";
+public $table;
+public $title;
+public $button;
+
+
 
 function __construct($table){
     $this->table=$table;
     $this->pdo=new PDO($this->dsn,"root","");
+    // $this->pdo=new PDO($this->dsn,$this->user,$this->pw);
+    // $this->setStr($table);
+
+
 }
 
 

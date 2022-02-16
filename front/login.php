@@ -18,11 +18,6 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <style>
-    * {
-      /* background-color: #E8ECEB; */
-
-    }
-
     #boxx:hover {
       background: white;
       box-shadow: 0px 20px 20px rgba(0, 0, 0, .25);
