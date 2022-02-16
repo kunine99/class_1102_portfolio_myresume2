@@ -34,7 +34,7 @@
 <div class="admin_content">
     
 <?php
-    $do=(isset($_GET['do']))?$_GET['do']:"main";
+    $do=(isset($_GET['do']))?$_GET['do']:"index";
     $file="back/".$do.".php";
     if(file_exists($file)){
         include_once $file;

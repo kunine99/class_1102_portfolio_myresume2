@@ -328,11 +328,13 @@
 
   <!-- Contact Container -->
   <!-- 顏色候補 #FAE6B1-->
-  <div class="container-fluid w3-padding-64 w3-theme-l5 text-white" id="contact" style="background-color: #F26659;">
+  <div class="container-fluid w3-padding-64 w3-theme-l5 text-black" id="contact" style="background-color: #F26659;">
     <div class="container">
       <div class="w3-row">
         <div class="w3-col m5" class="por_title col-12 text-right " data-text="Contact Me." id="por" data-aos="fade-left" data-aos-delay="170" data-aos-duration="1000">
-          <div class="w3-padding-16 "><span class="w3-xlarge  w3-bottombar" id="contact">Contact Me || 聯絡我</span></div>
+          <div class="w3-padding-16 ">
+            <span class="w3-xlarge  w3-bottombar" id="contact">Contact Me || 聯絡我</span>
+          </div>
           <h3>求職條件</h3>
           <p>求職條件：全職</p>
           <p>可上班日期：隨時</p>
