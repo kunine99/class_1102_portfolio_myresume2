@@ -186,22 +186,22 @@ class DB
     }
 
 
-   function count(...$arr)
+   function count(...$arg)
     {
         $sql = "select count(*) from $this->table";
         // if(!empty($arr[0]) && is_array($arr[0])){
-        if (isset($arr[0])) {
-            if (is_array($arr[0])) {
-                foreach ($arr[0] as $k => $v) {
+        if (isset($arg[0])) {
+            if (is_array($arg[0])) {
+                foreach ($arg[0] as $k => $v) {
                     $tmp[] = sprintf("`%s`='%s'", $k, $v);
                 }
                 $sql .= " where " . implode(" && ", $tmp);
             } else {
-                $sql .= $arr[0];
+                $sql .= $arg[0];
             }
         }
-        if (isset($arr[1])) {
-            $sql .= $arr[1];
+        if (isset($arg[1])) {
+            $sql .= $arg[1];
         }
         
         // echo $sql;

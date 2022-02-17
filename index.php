@@ -20,6 +20,7 @@
   <!-- AOS  轉場效果-->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <link rel="stylesheet" href="./css/admin.css">
 
 </head>
 

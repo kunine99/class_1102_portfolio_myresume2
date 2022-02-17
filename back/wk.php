@@ -39,10 +39,10 @@
                     <textarea type="text" name="wk_time[]" style="min-height:10px;width:100%;word-break:break-all">
                         <?= $wk['time']; ?>
                         </textarea>
-                        <textarea type="text" name="wk_time[]" style="min-height:10px;width:100%;word-break:break-all">
+                        <textarea type="text" name="wk_sh[]" style="min-height:10px;width:100%;word-break:break-all">
                         <?= $wk['sh']; ?>
-                        </textarea>
-
+                    </textarea>
+                    <input type="hidden" name="id[]" value="<?=$wk['id'];?>">
                 </div>
                 <br>
             </div>
