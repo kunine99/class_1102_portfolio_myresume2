@@ -18,6 +18,14 @@
                         <li><?= $wk['title']; ?></li>
                         <li><?= $wk['text']; ?></li>
                         <li><?= $wk['time']; ?></li>
+                        <li>
+                            <?php if($wk['sh']==1){
+                                echo "顯示中<i class='fa-solid fa-eye'></i>";
+                            }else if($wk['sh']==0){
+                                echo "下架中<i class='fa-solid fa-eye-low-vision'></i>";
+                            };
+                                ?>
+                        </li>
                     </ol>
                 </div>
                 <div class="mb-4"><b>預修改內容</b></div>
@@ -30,6 +38,9 @@
                         </textarea>
                     <textarea type="text" name="wk_time[]" style="min-height:10px;width:100%;word-break:break-all">
                         <?= $wk['time']; ?>
+                        </textarea>
+                        <textarea type="text" name="wk_time[]" style="min-height:10px;width:100%;word-break:break-all">
+                        <?= $wk['sh']; ?>
                         </textarea>
 
                 </div>
@@ -45,4 +56,7 @@
 </div>
 
 </form>
+<br><br>
+<br><br>
+<br><br>
 <br><br>
