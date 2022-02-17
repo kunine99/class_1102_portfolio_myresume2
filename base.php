@@ -156,6 +156,8 @@ class DB
         return $this->pdo->query($sql)->fetchAll();
     }
 
+
+    
     public function math($method,$col,...$arg){
         $sql="SELECT $method($col) FROM $this->table ";
 

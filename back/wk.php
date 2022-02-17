@@ -30,14 +30,10 @@
                 </div>
                 <div class="mb-4"><b>預修改內容</b></div>
                 <div class="col-12" style="width:100%;overflow:hidden;">
-                    <textarea type="text" name="wk_title[]" style="min-height:5px;width:100%;word-break:break-all"><?= $wk['title']; ?>
-                        </textarea>
-                    <textarea type="text" name="wk_revise[]" style="min-height:120px;width:100%;word-break:break-all"><?= $wk['text']; ?>
-                        </textarea>
-                    <textarea type="text" name="wk_time[]"><?= $wk['time']; ?>
-                        </textarea><br>
-                    <textarea type="text" name="wk_sh[]"  placeholder="請輸入0或是1"><?= $wk['sh']; ?>
-                    </textarea>
+                    <textarea type="text" name="wk_title[]" style="min-height:5px;width:30%;word-break:break-all"><?= $wk['title']; ?></textarea>
+                    <textarea type="text" name="wk_revise[]" style="min-height:120px;width:100%;word-break:break-all"><?= $wk['text']; ?></textarea>
+                    <textarea type="text" name="wk_time[]"><?= $wk['time']; ?></textarea><br>
+                    <textarea type="text" name="wk_sh[]"  placeholder="請輸入0或是1"><?= $wk['sh']; ?></textarea>
                     <input type="hidden" name="id[]" value="<?= $wk['id']; ?>">
                 </div>
                 <br>

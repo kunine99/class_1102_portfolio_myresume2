@@ -1,4 +1,4 @@
-<?php include_once "base.php";?>
+<?php include_once "base.php"; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -106,33 +106,35 @@
   <!-- About || 關於我 END -->
 
   <!-- Experience 經歷-->
-  <!-- <div class="container mt-12 " id="link-tabs"> -->
-  <!-- <div class="container mt-5" id="link-tabs"> -->
-  <!-- <div class="resume-section-content "> -->
   <div class="container-fluid text-white" style="background-color: #EBC999;">
+    <?php
+    $wks = $Work->all();
+    // print_r($wks);
+
+    // $wkpic = $SelfPic->all(['wk' => '1', 'sh' => '1']);
+    // print_r($wkpic);
+    ?>
     <h2 class="mb-2" class="por_title col-12 text-center " data-text="Contact Me." id="exe" data-aos="fade-left" data-aos-delay="170" data-aos-duration="1000">
-     <br>
-      <p class="text-center" >Experience || 經歷</p>
+      <br>
+      <p class="text-center">Experience || 經歷</p>
     </h2>
     <div class="d-flex flex-column flex-md-row justify-content-between">
       <div class="flex-grow-1">
-        <h3 class="mb-0">泰山職業訓練場－PHP資料庫網頁設計班</h3>
-        <div class="subheading mb-3">報名政府職訓局開辦課程【PHP資料庫網頁設計班】【920小時】，學習網頁程式設計相關技術，後端學習使用PHP原生語言撰寫網頁並搭配MySQL建構資料庫 進行資料管理，前端則使用HTML、CSS、JavaScript/JQ撰寫出具有動態效果的網頁內容，並配合Bootstrap 框架製作出RWD響應式網頁，最後再使用git進行基礎的版本控制。</div>
+        <h3 class="mb-0"><?= nl2br($wks[0]['title']); ?></h3>
+        <div class="subheading mb-3"><span><?= nl2br($wks[0]['text']); ?></span></div>
       </div>
-      <div class="flex-shrink-0"><span class="text-white">2021/09~2022/03</span></div>
+      <div class="flex-shrink-0"><span class="text-white"><?= nl2br($wks[0]['time']); ?></span></div>
+    </div>
+
+    <div class="d-flex flex-column flex-md-row justify-content-between">
+      <div class="flex-grow-1">
+        <h3 class="mb-0"><?= nl2br($wks[1]['title']); ?></h3>
+        <div class="subheading mb-3"><span><?= nl2br($wks[1]['text']); ?></span></div>
+      </div>
+      <div class="flex-shrink-0"><span class="text-white"><?= nl2br($wks[1]['time']); ?></span></div>
     </div>
   </div>
-  <!-- <div class="d-flex flex-column flex-md-row justify-content-between">
-        <div class="flex-grow-1">
-          <h3 class="mb-0">Lorem, ipsum dolor.</h3>
-          <div class="subheading mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, nostrum!</div>
-          <p>GPA</p>
-        </div>
-        <div class="flex-shrink-0"><span class="text-primary">August 2002 - May 2006</span></div>
-      </div> -->
-  <!-- </div> -->
-  <!-- </div> -->
-  <!-- <hr class="m-0" /> -->
+
   <!-- Experience 經歷 END -->
 
   <!-- Portfolio || 作品集 -->
@@ -326,85 +328,85 @@
     <!-- tabs end -->
     <!-- Portfolio || 作品集 END-->
 
-  <!-- tabs end -->
-  <!-- Portfolio || 作品集 END-->
+    <!-- tabs end -->
+    <!-- Portfolio || 作品集 END-->
 
-  <!-- Contact Container -->
-  <!-- 顏色候補 #FAE6B1-->
-  <div class="container-fluid w3-padding-64 w3-theme-l5 text-black" id="contact" style="background-color: #F26659;">
-    <div class="container">
-      <div class="w3-row">
-        <div class="w3-col m5" class="por_title col-12 text-right " data-text="Contact Me." id="por" data-aos="fade-left" data-aos-delay="170" data-aos-duration="1000">
-          <div class="w3-padding-16 ">
-            <span class="w3-xlarge  w3-bottombar" id="contact">Contact Me || 聯絡我</span>
+    <!-- Contact Container -->
+    <!-- 顏色候補 #FAE6B1-->
+    <div class="container-fluid w3-padding-64 w3-theme-l5 text-black" id="contact" style="background-color: #F26659;">
+      <div class="container">
+        <div class="w3-row">
+          <div class="w3-col m5" class="por_title col-12 text-right " data-text="Contact Me." id="por" data-aos="fade-left" data-aos-delay="170" data-aos-duration="1000">
+            <div class="w3-padding-16 ">
+              <span class="w3-xlarge  w3-bottombar" id="contact">Contact Me || 聯絡我</span>
+            </div>
+            <h3>求職條件</h3>
+            <p>求職條件：全職</p>
+            <p>可上班日期：隨時</p>
+            <p>希望待遇：面議</p>
+            <p>求職地區：北部</p>
+            <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i> 新北市汐止區, 台灣</p>
+            <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +00 0000000000</p>
+            <p><i class="fas fa-envelope me-3 w3-text-teal w3-xlarge"></i> rongyy94job@gmail.com</p>
+            <!-- 感謝您撥冗閱讀，如有任何需要，請隨時聯絡我！ -->
+
           </div>
-          <h3>求職條件</h3>
-          <p>求職條件：全職</p>
-          <p>可上班日期：隨時</p>
-          <p>希望待遇：面議</p>
-          <p>求職地區：北部</p>
-          <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i> 新北市汐止區, 台灣</p>
-          <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +00 0000000000</p>
-          <p><i class="fas fa-envelope me-3 w3-text-teal w3-xlarge"></i> rongyy94job@gmail.com</p>
-          <!-- 感謝您撥冗閱讀，如有任何需要，請隨時聯絡我！ -->
-
-        </div>
-        <div class="w3-col m7 box">
-          <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
-            <div class="w3-section">
-              <label>Name</label>
-              <input class="w3-input" type="text" name="Name" required>
-            </div>
-            <div class="w3-section">
-              <label>Email</label>
-              <input class="w3-input" type="text" name="Email" required>
-            </div>
-            <div class="w3-section">
-              <label>Message</label>
-              <input class="w3-input" type="text" name="Message" required>
-            </div>
-            <!-- <input class="w3-check" type="checkbox" checked name="Like"> -->
-            <!-- <label>I Like it!</label> -->
-            <button type="submit" class="w3-button w3-right w3-theme">Send</button>
-          </form>
+          <div class="w3-col m7 box">
+            <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
+              <div class="w3-section">
+                <label>Name</label>
+                <input class="w3-input" type="text" name="Name" required>
+              </div>
+              <div class="w3-section">
+                <label>Email</label>
+                <input class="w3-input" type="text" name="Email" required>
+              </div>
+              <div class="w3-section">
+                <label>Message</label>
+                <input class="w3-input" type="text" name="Message" required>
+              </div>
+              <!-- <input class="w3-check" type="checkbox" checked name="Like"> -->
+              <!-- <label>I Like it!</label> -->
+              <button type="submit" class="w3-button w3-right w3-theme">Send</button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- </div> -->
-  <!-- Contact Container END-->
+    <!-- </div> -->
+    <!-- Contact Container END-->
 
-  <!-- footer -->
-  <footer class="text-center text-white fixed-bottom " style="background-color: #F26659;">
-    <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.2);">
-    <?= $Bottom->find(1)['bottom']; ?>
-    </div>
-  </footer>
-  <!-- footer end -->
-  
+    <!-- footer -->
+    <footer class="text-center text-white fixed-bottom " style="background-color: #F26659;">
+      <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.2);">
+        <?= $Bottom->find(1)['bottom']; ?>
+      </div>
+    </footer>
+    <!-- footer end -->
 
-  <script>
-    // 使用aos.js
-    AOS.init();
-  </script>
 
-  <!-- cdnj/Home/Libraries/bodymovin  lottie小動畫用-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.8.1/lottie.min.js"></script>
-  <script src="./js/script.js"></script>
+    <script>
+      // 使用aos.js
+      AOS.init();
+    </script>
 
-  <!-- bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    <!-- cdnj/Home/Libraries/bodymovin  lottie小動畫用-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.8.1/lottie.min.js"></script>
+    <script src="./js/script.js"></script>
 
-  <!-- tabs js -->
-  <script>
-    $(document).ready(function() {
-      $(".nav-tabs a").click(function() {
-        $(this).tab('show');
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+
+    <!-- tabs js -->
+    <script>
+      $(document).ready(function() {
+        $(".nav-tabs a").click(function() {
+          $(this).tab('show');
+        });
       });
-    });
-  </script>
+    </script>
 
 
 </body>
