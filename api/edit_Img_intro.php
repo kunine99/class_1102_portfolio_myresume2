@@ -1,13 +1,13 @@
 <?php
 include_once "../base.php";
-
 print_r($_POST);
+// 自我介紹文字內容管理_顯示/刪除照片
 
 $row=[];
 for($i=0;$i<count($_POST['id']);$i++){
     $row['id']=$_POST['id'][$i];
 
-    // sh下判斷 或在前面用ajax做提醒~
+   
     $row['sh']=(isset($_POST['sh']) && in_array($_POST['id'][$i],$_POST['sh']))?1:0;
     $row['wk']='0';
     $SelfPic->save($row);

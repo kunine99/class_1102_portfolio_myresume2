@@ -1,6 +1,7 @@
 <?php
 
 include_once "../base.php";
+// 自我介紹文字內容管理
 
 $initialB=$BasicIntro->all();
 // print_r($initialB[0]);

@@ -2,6 +2,7 @@
 
 include_once "../base.php";
 // print_r($_FILES);
+// 新增個人照片
 
 if(!empty($_FILES['pic']['tmp_name'])){
     $row=[];

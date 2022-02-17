@@ -25,7 +25,7 @@
             <br>
         </div>
 </div>
-<br><br>
+
 
 <div class="wkButton">
     <button type="submit" class="btn btn-danger">確定修改</button>
@@ -34,8 +34,8 @@
 
 </form>
 <!-- 頁尾版權資料 END-->
-
-<br><hr><br>
+<br><br>
+<br><hr>
 
 <!-- 頁尾版權資料 -->
 

@@ -166,7 +166,8 @@
         <div class="row">
           <div class="col-md-4 w-80">
             <div class="box">
-              <img src="./image/back_01.PNG" class="card-img-top" alt="...">
+              <a href="http://220.128.133.15/s1100411/calendar/">
+              <img src="./image/back_01.PNG" class="card-img-top" alt="...</a>">
               <h3 class="text-secondary">萬年曆</h3>
               <div class="line bg-success"></div>
               <p>CSS、HTML、PHP</p>
@@ -174,7 +175,8 @@
           </div>
           <div class="col-md-4 w-80">
             <div class="box">
-              <img src="./image/back_02.PNG" class="card-img-top" alt="...">
+              <a href="http://220.128.133.15/s1100411/vote11/">
+              <img src="./image/back_02.PNG" class="card-img-top" alt="...</a>">
               <h3 class="text-secondary">投票系統</h3>
               <div class="line bg-success"></div>
               <p>CSS、HTML、PHP、SQL</p>
@@ -182,7 +184,8 @@
           </div>
           <div class="col-md-4 w-80">
             <div class="box">
-              <img src="https://picsum.photos/id/1025/400/300" class="card-img-top" alt="...">
+              <a href="http://">
+              <img src="https://picsum.photos/id/1025/400/300" class="card</a>-img-top" alt="...">
               <h3 class="text-secondary">Child</h3>
               <div class="line bg-success"></div>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem animi quibusdam maiores
@@ -197,7 +200,8 @@
           <div class="row">
             <div class="col-md-4 w-80">
               <div class="box">
-                <img src="./image/ps_01.jpg" class="card-img-top" alt="...">
+                <a href="https://github.com/wdaweb/php-portfolio-1102-kunine99/blob/master/image/ps_01.jpg">
+                <img src="./image/ps_01.jpg" class="card-img-top" alt="..."></a>
                 <h3 class="text-secondary">職訓局宣傳海報</h3>
                 <div class="line bg-success"></div>
                 <p>photoshop</p>
@@ -205,7 +209,8 @@
             </div>
             <div class="col-md-4 w-80">
               <div class="box">
-                <img src="./image/ps_02.jpg" class="card-img-top" alt="...">
+                <a href="https://github.com/wdaweb/php-portfolio-1102-kunine99/blob/master/image/ps_02.jpg">
+                <img src="./image/ps_02.jpg" class="card-img-top" alt="..."></a>
                 <h3 class="text-secondary">老街旅遊海報</h3>
                 <div class="line bg-success"></div>
                 <p>photoshop</p>
@@ -213,7 +218,8 @@
             </div>
             <div class="col-md-4 w-80">
               <div class="box">
-                <img src="./image/ps_03.jpg" class="card-img-top" alt="...">
+                <a href="https://github.com/wdaweb/php-portfolio-1102-kunine99/blob/master/image/ps_03.jpg">
+                <img src="./image/ps_03.jpg" class="card-img-top" alt="..."></a>
                 <h3 class="text-secondary">虎年年曆</h3>
                 <div class="line bg-success"></div>
                 <p>photoshop</p>
@@ -232,7 +238,8 @@
         <div class="row">
           <div class="col-md-4 w-80">
             <div class="box">
-              <img src="./image/back_01.PNG" class="card-img-top" alt="...">
+              <a href="http://220.128.133.15/s1100411/calendar/">
+              <img src="./image/back_01.PNG" class="card-img-top" alt="...</a>">
               <h3 class="text-secondary">萬年曆</h3>
               <div class="line bg-success"></div>
               <p>CSS、HTML、PHP</p>
@@ -240,7 +247,8 @@
           </div>
           <div class="col-md-4 w-80">
             <div class="box">
-              <img src="./image/back_02.PNG" class="card-img-top" alt="...">
+              <a href="http://220.128.133.15/s1100411/vote11/">
+              <img src="./image/back_02.PNG" class="card-img-top" alt="...</a>">
               <h3 class="text-secondary">投票系統</h3>
               <div class="line bg-success"></div>
               <p>CSS、HTML、PHP、SQL</p>
@@ -248,7 +256,8 @@
           </div>
           <div class="col-md-4 w-80">
             <div class="box">
-              <img src="https://picsum.photos/id/1025/400/300" class="card-img-top" alt="...">
+              <a href="http://">
+              <img src="https://picsum.photos/id/1025/400/300" class="card</a>-img-top" alt="...">
               <h3 class="text-secondary">Child</h3>
               <div class="line bg-success"></div>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem animi quibusdam maiores
@@ -262,7 +271,8 @@
         <!-- <div class="row mt-5 justify-content-center">
           <div class="col-md-4 w-80">
             <div class="box">
-              <img src="https://picsum.photos/id/1025/400/300" class="card-img-top" alt="...">
+              <a href="http://">
+              <img src="https://picsum.photos/id/1025/400/300" class="card</a>-img-top" alt="...">
               <h3 class="text-secondary">Child</h3>
               <div class="line bg-success"></div>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem animi quibusdam maiores
@@ -271,7 +281,8 @@
           </div>
           <div class="col-md-4 w-80">
             <div class="box">
-              <img src="https://picsum.photos/id/1025/400/300" class="card-img-top" alt="...">
+              <a href="http://">
+              <img src="https://picsum.photos/id/1025/400/300" class="card</a>-img-top" alt="...">
               <h3 class="text-secondary">Child</h3>
               <div class="line bg-success"></div>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem animi quibusdam maiores
@@ -280,7 +291,8 @@
           </div>
           <div class="col-md-4 w-80">
             <div class="box">
-              <img src="https://picsum.photos/id/1025/400/300" class="card-img-top" alt="...">
+              <a href="http://">
+              <img src="https://picsum.photos/id/1025/400/300" class="card</a>-img-top" alt="...">
               <h3 class="text-secondary">Child</h3>
               <div class="line bg-success"></div>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem animi quibusdam maiores
@@ -298,7 +310,8 @@
         <div class="row">
           <div class="col-md-4 w-80">
             <div class="box">
-              <img src="./image/ps_01.jpg" class="card-img-top" alt="...">
+              <a href="https://github.com/wdaweb/php-portfolio-1102-kunine99/blob/master/image/ps_01.jpg">
+              <img src="./image/ps_01.jpg" class="card-img-top" alt="..."></a>
               <h3 class="text-secondary">職訓局宣傳海報</h3>
               <div class="line bg-success"></div>
               <p>photoshop</p>
@@ -306,7 +319,8 @@
           </div>
           <div class="col-md-4 w-80">
             <div class="box">
-              <img src="./image/ps_02.jpg" class="card-img-top" alt="...">
+              <a href="https://github.com/wdaweb/php-portfolio-1102-kunine99/blob/master/image/ps_02.jpg">
+              <img src="./image/ps_02.jpg" class="card-img-top" alt="..."></a>
               <h3 class="text-secondary">老街旅遊海報</h3>
               <div class="line bg-success"></div>
               <p>photoshop</p>
@@ -314,7 +328,8 @@
           </div>
           <div class="col-md-4 w-80">
             <div class="box">
-              <img src="./image/ps_03.jpg" class="card-img-top" alt="...">
+              <a href="https://github.com/wdaweb/php-portfolio-1102-kunine99/blob/master/image/ps_03.jpg">
+              <img src="./image/ps_03.jpg" class="card-img-top" alt="..."></a>
               <h3 class="text-secondary">虎年年曆</h3>
               <div class="line bg-success"></div>
               <p>photoshop</p>
@@ -344,7 +359,7 @@
             <p>可上班日期：隨時</p>
             <p>希望待遇：面議</p>
             <p>求職地區：北部</p>
-            <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i> 新北市汐止區, 台灣</p>
+            <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i> <?= $bis[0]['addr'] ?>, 台灣</p>
             <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +00 0000000000</p>
             <p><i class="fas fa-envelope me-3 w3-text-teal w3-xlarge"></i> <?= $bis[0]['email']; ?></p>
             <!-- 感謝您撥冗閱讀，如有任何需要，請隨時聯絡我！ -->

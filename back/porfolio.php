@@ -22,15 +22,15 @@
 </div>
 
 
-<form action="api/editPor.php" method="post" enctype="multipart/form-data">
+<form action="api/edit_Por.php" method="post" enctype="multipart/form-data">
 <?php
 $pors=$Por->all();
 // print_r($pors);
 echo '<hr>';
 
-// 抓出不等於NULL的值 可以顯示在前台
+
 foreach($pors as $k => $por){
-    // print_r($por);
+
 ?>
 
 
@@ -42,16 +42,6 @@ foreach($pors as $k => $por){
 
     <div class="col-3">
         <div class="mb-3"><?=$por['name'];?></div>
-
-
-        <!-- <img src="
-        < ?php
-        $imgs=$SelfPic->q("select `img` from `resume_image` where `img` LIKE 'por%' && `porName`='".$por['name']."'");
-        echo 'self_pic/'.$imgs['img'];
-        
-        ?>
-        " style="width:100px;height:100px;"> -->
-        
         </div>
     <div class="col-3" >
         <u><?=$por['href'];?></u>
@@ -83,6 +73,7 @@ foreach($pors as $k => $por){
 <button type="reset" class="btn btn-danger" onclick="reset()">重置</button>
 </form>
 
+<br><br>
 
 
 
