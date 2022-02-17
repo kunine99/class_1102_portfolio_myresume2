@@ -19,30 +19,26 @@
                         <li><?= $wk['text']; ?></li>
                         <li><?= $wk['time']; ?></li>
                         <li>
-                            <?php if($wk['sh']==1){
+                            <?php if ($wk['sh'] == 1) {
                                 echo "顯示中<i class='fa-solid fa-eye'></i>";
-                            }else if($wk['sh']==0){
+                            } else if ($wk['sh'] == 0) {
                                 echo "下架中<i class='fa-solid fa-eye-low-vision'></i>";
                             };
-                                ?>
+                            ?>
                         </li>
                     </ol>
                 </div>
                 <div class="mb-4"><b>預修改內容</b></div>
                 <div class="col-12" style="width:100%;overflow:hidden;">
-                    <textarea type="text" name="wk_title[]" style="min-height:10px;width:100%;word-break:break-all">
-                        <?= $wk['title']; ?>
+                    <textarea type="text" name="wk_title[]" style="min-height:5px;width:100%;word-break:break-all"><?= $wk['title']; ?>
                         </textarea>
-                    <textarea type="text" name="wk_revise[]" style="min-height:120px;width:100%;word-break:break-all">
-                        <?= $wk['text']; ?>
+                    <textarea type="text" name="wk_revise[]" style="min-height:120px;width:100%;word-break:break-all"><?= $wk['text']; ?>
                         </textarea>
-                    <textarea type="text" name="wk_time[]" style="min-height:10px;width:100%;word-break:break-all">
-                        <?= $wk['time']; ?>
-                        </textarea>
-                        <textarea type="text" name="wk_sh[]" style="min-height:10px;width:100%;word-break:break-all">
-                        <?= $wk['sh']; ?>
+                    <textarea type="text" name="wk_time[]"><?= $wk['time']; ?>
+                        </textarea><br>
+                    <textarea type="text" name="wk_sh[]"  placeholder="請輸入0或是1"><?= $wk['sh']; ?>
                     </textarea>
-                    <input type="hidden" name="id[]" value="<?=$wk['id'];?>">
+                    <input type="hidden" name="id[]" value="<?= $wk['id']; ?>">
                 </div>
                 <br>
             </div>
