@@ -87,6 +87,10 @@
   <!-- About || 關於我 -->
 
   <div class="w3-row w3-padding-64  " id="#about" style="background-color: #E8ECEB;">
+    <?php
+    $bis = $BasicIntro->all();
+    // print_r($bis);
+    ?>
     <div class="w3-col m6 w3-padding-large w3-hide-small">
       <img src="./image/myheadshot.png" class="w3-round w3-image w3-opacity-min box" alt="Table Setting" width="300" height="450">
       <!-- https://picsum.photos/id/1025/400/300 -->
@@ -94,11 +98,11 @@
 
     <div class="w3-col m6 w3-padding-large">
       <h1 class="w3-center" data-text="Contact Me." id="exe" data-aos="fade-left" data-aos-delay="170" data-aos-duration="1000">About || 關於我</h1><br>
-      <h5 class=" w3-center">立志轉職為工程師的人</h5>
-      <p class="w3-large">hello！我畢業於 銘傳大學—應用日語學系
+      <h5 class=" w3-center"><?= $bis[0]['other'] ?></h5>
+      <p class="w3-large">hello！我畢業於<?= $bis[0]['graduate'] ?>
       <p class="w3-large">生日：xxxx/9月
-      <p class="w3-large">現居地：新北市汐止區
-      <p class="w3-large">期望職位：前/後端工程師(全職)
+      <p class="w3-large">現居地：<?= $bis[0]['addr'] ?>
+      <p class="w3-large">期望職位：<?= $bis[0]['position']; ?>
         <!-- <p class="w3-large w3-text-grey w3-hide-medium">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
     </div>
   </div>
@@ -125,7 +129,7 @@
       </div>
       <div class="flex-shrink-0"><span class="text-white"><?= nl2br($wks[0]['time']); ?></span></div>
     </div>
-  <!-- 經歷2 -->
+    <!-- 經歷2 -->
     <div class="d-flex flex-column flex-md-row justify-content-between">
       <div class="flex-grow-1">
         <h3 class="mb-0"><?= nl2br($wks[1]['title']); ?></h3>
@@ -347,7 +351,7 @@
             <p>求職地區：北部</p>
             <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i> 新北市汐止區, 台灣</p>
             <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +00 0000000000</p>
-            <p><i class="fas fa-envelope me-3 w3-text-teal w3-xlarge"></i> rongyy94job@gmail.com</p>
+            <p><i class="fas fa-envelope me-3 w3-text-teal w3-xlarge"></i> <?= $bis[0]['email']; ?></p>
             <!-- 感謝您撥冗閱讀，如有任何需要，請隨時聯絡我！ -->
 
           </div>
