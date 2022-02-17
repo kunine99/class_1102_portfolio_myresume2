@@ -66,7 +66,6 @@
           <div class="text-white">
             <h1 class="mb-3">Chang Yen-Jung</h1>
             <h4 class="mb-3">Welcome my website</h4>
-            <!-- <a class="btn btn-outline-light btn-lg" href="#!" role="button">Call to action</a> -->
             <div class="container  pb-0 ">
               <section class="mb-4">
                 <!-- mail -->
@@ -100,7 +99,6 @@
       <p class="w3-large">生日：xxxx/9月
       <p class="w3-large">現居地：<?= $bis[0]['addr'] ?>
       <p class="w3-large">期望職位：<?= $bis[0]['position']; ?>
-        <!-- <p class="w3-large w3-text-grey w3-hide-medium">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
     </div>
   </div>
 

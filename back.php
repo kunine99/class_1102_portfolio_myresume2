@@ -28,7 +28,7 @@
     <a href="?do=wk">Experience || 經歷</a>
     <!-- <a href="?do=skills">SKILLS</a> -->
     <a href="?do=porfolio">Portfolio || 作品集</a>
-    <a href="?do=contact">Contact Me || 聯絡我</a>
+    <!-- <a href="?do=contact">Contact Me || 聯絡我</a> -->
     <a href="?do=other">Other || 其他</a>
 </div>
 <div class="admin_content">

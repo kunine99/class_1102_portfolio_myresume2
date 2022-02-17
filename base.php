@@ -257,30 +257,24 @@ class DB
     }
 }
 
-function to($url)
-{
-    header("location:" . $url);
+function dd($array){
+    echo "<pre>";
+    print_r($array);
+    echo "</pre>";
+}
+
+function to($url){
+    header("location:".$url);
 }
 
 
-// $Login=new DB("resume_login");
 $BasicIntro = new DB("resume_basic_intro");
 // $SelfIntro=new DB("resume_self_intro");
 $SelfPic=new DB("resume_image");
 $Work = new DB("resume_work_experience");
-// $Por=new DB("resume_porfolio");
-
-// $Skt=new DB("resume_sk_text");
-
-$Total = new DB('total');
+$Por=new DB("resume_porfolio");
 $Bottom = new DB('resume_bottom');
-$TitlePic = new DB('rresume_titlepucture');
-$Ad = new DB('ad');
-$Mvim = new DB('mvim');
-$Image = new DB('image');
-$News = new DB('news');
-$Admin = new DB('admin');
-$Menu = new DB('menu');
+
  
 
 ?>
