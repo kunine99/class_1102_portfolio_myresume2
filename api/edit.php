@@ -38,6 +38,6 @@ foreach($_POST['id'] as $key => $id){
 }
 // to("../back.php?do=work");
 
-to("../back.php?do=".$DB->table);
+// to("../back.php?do=".$DB->table);
 
 ?>

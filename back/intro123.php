@@ -1,7 +1,8 @@
 <style>
-    input[type="text"] {
+    input {
         width: 100%;
         padding: 12px 24px;
+
         background-color: transparent;
         transition: transform 250ms ease-in-out;
         font-size: 14px;
@@ -76,33 +77,35 @@
 <!-- 自我介紹圖片 -->
 
 <!-- 新增照片 -->
-<div>
+<div class="d-flex">
     <form action="api/upload_intro.php" method="post" enctype="multipart/form-data">
-        <div class="h2">新增照片</div>
+    <div class="h2">新增照片</div>
         <br>
         <p>新增個人照片(前台僅限顯示一張)</p>
         <P>下方可以勾選顯示照片及做刪除動作</P>
+
+
         <table>
             <tr>
                 <td>動畫圖片：</td>
                 <td><input type="file" name="pic"></td>
             </tr>
         </table>
-</div>
-<br>
-<div>
-    <input type="hidden" name="table" value="intro">
-    <input type="submit" value="新增" class="btn btn-danger">
-    <input type="reset" value="重置" class="btn btn-danger">
-</div>
-</form>
+        <div class="wkButton">
+            <input type="hidden" name="table" value="intro">
+            <input type="submit" value="新增" class="btn btn-danger">
+            <input type="reset" value="重置" class="btn btn-danger">
+        </div>
+    </form>
 
+    <!-- <h4 class="col-10 text-center">個人照片</h4> -->
+    <!-- <div class="show col-2">
+        <span>show</span> |
+        <span>del</span>
+    </div> -->
+</div>
 <!-- 新增照片 END -->
 <hr>
-
-<!-- 顯示/刪除照片 -->
-<div class="h2">顯示/刪除照片</div>
-<br>
 <div class="d-flex">
     <?php
     $pics = $SelfPic->all(['intro' => '1']);
@@ -110,48 +113,32 @@
         // print_r($pic);
     ?>
 
+        <br>
+        <form action="api/edit_Img_intro.php" method="post">
+            <div>
 
-        <div>
+                <div>
+                    <img src="image/<?= $pic['img']; ?>" style="width:100px;height:120px;">
+                </div><br>
 
-            <form method="post" action="api/edit_Img_intro.php">
-                <table width="100%">
-                    <tbody>
-                        <tr class="d-flex justify-content-around">
-                            <td width="70%" class="text-center">圖片</td>
-                            <td width="20%">顯示</td>
-                            <td width="20%">刪除</td>
-                            <td></td>
-                        </tr>
+                <div">
+                    <input type="radio" name="sh[]" value="<?= $pic['id']; ?>" <?= ($pic['sh'] == 1) ? 'checked' : ''; ?>>
+            </div><br>
 
-                        <tr>
-                            <td width="70%" class="text-center">
-                                <img src="image/<?= $pic['img']; ?>" style="width:100px;height:120px;">
-                            </td>
-                            <td width="20%">
-                                <input type="radio" name="sh[]" value="<?= $pic['id']; ?>" <?= ($pic['sh'] == 1) ? 'checked' : ''; ?>>
-                            </td>
-                            <td width="20%">
-                                <input type="checkbox" name="del[]" value="<?= $pic['id']; ?>">
-                            </td>
+            <div>
+                <input type="checkbox" name="del[]" value="<?= $pic['id']; ?>">
+            </div><br>
+</div>
+<br>
+<input type="hidden" name="id[]" value="<?= $pic['id']; ?>">
 
-                            <td>
-                                <input type="hidden" name="id[]" value="<?= $pic['id']; ?>">
+<?php
+    }
+?>
 
-                            </td>
-                        </tr>
-                    <?php
-                }
-                    ?>
-                    </tbody>
-                </table>
-        </div>
-        <div class="wkButton">
-            <button type="submit" class="btn btn-danger">確認修改</button><br>
-            <button type="reset" class="btn btn-danger">重置</button><br>
-        </div>
-        </form>
-        <!-- 顯示/刪除照片END -->
-
-        <!-- 自我介紹圖片 END-->
+<button type="submit" class="btn btn-danger">確認修改</button><br>
+<button type="reset" class="btn btn-danger">重置</button><br>
+</form>
+<!-- 自我介紹圖片 END-->
 </div>
 <br><br>

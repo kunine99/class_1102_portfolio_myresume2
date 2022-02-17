@@ -3,11 +3,13 @@
 
 class DB
 {
+    // 本地
+    protected $dsn = "mysql:host=localhost;charset=utf8;dbname=resume";
+    protected $pdo = "";
 
-    protected $dsn = "mysql:host=localhost;charset=utf8;dbname=s1100411";
-    protected $pdo;
-    // protected $dsn = "mysql:host=localhost;charset=utf8;dbname=resume_11";
-    // protected $pdo = "";
+    //220
+    // protected $dsn = "mysql:host=localhost;charset=utf8;dbname=s1100411";
+    // protected $pdo;
 
     public $table;
     public $title;
@@ -21,9 +23,14 @@ class DB
     public function __construct($table)
     {
         $this->table = $table;
-        $this->pdo = new PDO($this->dsn, 's1100411', 's1100411');
-        // $this->pdo=new PDO($this->dsn,$this->user,$this->pw);
+        // 本地
+        $this->pdo = new PDO($this->dsn, "root", "");
+        
+        //220
+        // $this->pdo = new PDO($this->dsn, 's1100411', 's1100411');
         $this->setStr($table);
+
+
     }
 
     private function setStr($table){
@@ -136,7 +143,34 @@ class DB
         return $this->pdo->query($sql)->fetchAll();
     }
 
+    public function all2(...$arg){
+        $sql="SELECT * FROM $this->table ";
 
+        switch(count($arg)){
+            case 2:
+                foreach($arg[0] as $key => $value){
+                    $tmp[]="`$key`='$value'";
+                }
+
+                $sql .=" WHERE ".implode(" AND ",$tmp)." ".$arg[1];
+
+            break;
+            case 1:
+                if(is_array($arg[0])){
+                    
+                    foreach($arg[0] as $key => $value){
+                        $tmp[]="`$key`='$value'";
+                    }
+                    $sql .= " WHERE ".implode(" AND ",$tmp);
+                }else{
+                    $sql .= $arg[0];
+                    
+                }
+            break;
+        }
+
+        return $this->pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC);
+    }
     
     public function math($method,$col,...$arg){
         $sql="SELECT $method($col) FROM $this->table ";
@@ -231,15 +265,15 @@ function to($url)
 // $Login=new DB("resume_login");
 $BasicIntro = new DB("resume_basic_intro");
 // $SelfIntro=new DB("resume_self_intro");
-// $SelfPic=new DB("resume_image");
+$SelfPic=new DB("resume_image");
 $Work = new DB("resume_work_experience");
 // $Por=new DB("resume_porfolio");
-// $Sk=new DB("resume_skills");
+
 // $Skt=new DB("resume_sk_text");
 
 $Total = new DB('total');
 $Bottom = new DB('resume_bottom');
-$Title = new DB('resume_title');
+$TitlePic = new DB('rresume_titlepucture');
 $Ad = new DB('ad');
 $Mvim = new DB('mvim');
 $Image = new DB('image');
