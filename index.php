@@ -125,7 +125,7 @@
       </div>
       <div class="flex-shrink-0"><span class="text-white"><?= nl2br($wks[0]['time']); ?></span></div>
     </div>
-
+  <!-- 經歷2 -->
     <div class="d-flex flex-column flex-md-row justify-content-between">
       <div class="flex-grow-1">
         <h3 class="mb-0"><?= nl2br($wks[1]['title']); ?></h3>
@@ -134,7 +134,7 @@
       <div class="flex-shrink-0"><span class="text-white"><?= nl2br($wks[1]['time']); ?></span></div>
     </div>
   </div>
-
+  <!-- 經歷2  end-->
   <!-- Experience 經歷 END -->
 
   <!-- Portfolio || 作品集 -->
