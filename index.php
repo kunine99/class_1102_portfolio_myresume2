@@ -87,15 +87,12 @@
   <!-- About || 關於我 -->
 
   <div class="w3-row w3-padding-64  " id="#about" style="background-color: #E8ECEB;">
-    <?php
-    $bis = $BasicIntro->all();
-    // print_r($bis);
-    ?>
+    <?php $bis = $BasicIntro->all();?>
+    <?php $pic = $SelfPic->find(['intro' => '1', 'sh' => '1']);?>
     <div class="w3-col m6 w3-padding-large w3-hide-small">
-      <img src="./image/myheadshot.png" class="w3-round w3-image w3-opacity-min box" alt="Table Setting" width="300" height="450">
+      <img src="image/<?= $pic['img']; ?>" class="w3-round w3-image w3-opacity-min box" alt="Table Setting" width="300" height="450">
       <!-- https://picsum.photos/id/1025/400/300 -->
     </div>
-
     <div class="w3-col m6 w3-padding-large">
       <h1 class="w3-center" data-text="Contact Me." id="exe" data-aos="fade-left" data-aos-delay="170" data-aos-duration="1000">About || 關於我</h1><br>
       <h5 class=" w3-center"><?= $bis[0]['other'] ?></h5>

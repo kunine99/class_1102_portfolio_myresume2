@@ -95,7 +95,8 @@ class DB
 
         if (is_array($id)) {
             foreach ($id as $key => $value) {
-                $tmp[] = "`$key`='$value'";
+                // $tmp[] = "`$key`='$value'";
+                $tmp[]=sprintf("`%s`='%s'",$key,$value);
             }
 
             $sql .= implode(" AND ", $tmp);
